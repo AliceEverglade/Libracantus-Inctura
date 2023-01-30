@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     string currentState;
     const string IDLE = "Idle";
-    const string WALK = "Walk";
+    const string WALK = "Run";
 
     private void Start()
     {
