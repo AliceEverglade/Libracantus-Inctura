@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    public List<Recipe> recipeBook;
+    [SerializeField] private List<InventoryItemData> input = new List<InventoryItemData>();
+    [SerializeField] private List<Recipe> recipeBook;
     // Start is called before the first frame update
     void Start()
     {
-        
+        CheckRecipe();
     }
 
     // Update is called once per frame
@@ -17,7 +18,7 @@ public class Cauldron : MonoBehaviour
         
     }
 
-    private void CheckRecipe(List<InventoryItemData> input) // do this on button press
+    private void CheckRecipe() // do this on button press
     {
         foreach(var recipe in recipeBook)
         {
@@ -26,6 +27,7 @@ public class Cauldron : MonoBehaviour
                 if(Random.Range(1,101) <= successrate)
                 {
                     //give x amount of item to player and remove items from cauldron inventory
+                    Debug.Log($"Crafted {recipe.amount} of {recipe.output.ToString()} with a {successrate}% chance of succeeding");
                 }
             }
         }
