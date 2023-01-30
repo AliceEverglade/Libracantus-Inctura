@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: YellowPotionRecipe
   m_EditorClassIdentifier: 
   name: 
-  ingredients: []
-  ingredientCount: 0
-  output: {fileID: 0}
-  baseSuccessChance: 0
-  amount: 0
+  ingredients:
+  - {fileID: 11400000, guid: 3fa617da3ce9120449260c2dcafc50e1, type: 2}
+  - {fileID: 11400000, guid: 82931e91c410e5f43acff6eb96edc775, type: 2}
+  ingredientCount: 2
+  output: {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  baseSuccessChance: 100
+  amount: 1
