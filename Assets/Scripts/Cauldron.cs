@@ -6,6 +6,7 @@ public class Cauldron : MonoBehaviour
 {
     [SerializeField] private List<InventoryItemData> input = new List<InventoryItemData>();
     [SerializeField] private List<Recipe> recipeBook;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,14 @@ public class Cauldron : MonoBehaviour
                     //give x amount of item to player and remove items from cauldron inventory
                     Debug.Log($"Crafted {recipe.amount} of {recipe.output.ToString()} with a {successrate}% chance of succeeding");
                 }
+                else
+                {
+                    //fail craft
+                }
+            }
+            else
+            {
+                //fail craft
             }
         }
     }

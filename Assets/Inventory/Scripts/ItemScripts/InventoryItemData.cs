@@ -8,7 +8,6 @@ public class InventoryItemData : ScriptableObject
     public int ID;
     public string DisplayName;
 
-
     [TextArea(4, 4)]
     public string Description;
 
@@ -26,10 +25,15 @@ public class InventoryItemData : ScriptableObject
         }
     }
     public Color RarityColor;
+    public List<Material> RarityMaterials;
     public enum itemTypes
     {
-        Material,
-
+        Consumable,
+        CraftingMaterial,
+        Weapon,
+        Armor,
+        Accessory,
+        QuestItem,
 
     }
     public enum Rarities

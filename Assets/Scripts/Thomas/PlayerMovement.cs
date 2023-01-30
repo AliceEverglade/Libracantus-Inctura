@@ -10,29 +10,49 @@ public class PlayerMovement : MonoBehaviour
 
     //Animation player
     Animator animator;
-    string currentState;
-    const string IDLE = "Idle";
-    const string WALK = "Walk";
+    Rigidbody2D rb;
+    [SerializeField] private animationStates currentState = animationStates.Idle;
+    public animationStates CurrentState
+    {
+        get 
+        { 
+            return currentState; 
+        }
+        private set
+        {
+            if(currentState != value)
+            {
+                animator.Play(value.ToString());
+                currentState = value;
+            }
+        }
+    }
+
+    public enum animationStates
+    {
+        Idle,
+        Run
+    }
 
     private void Start()
     {
-        animator = gameObject.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        float dir = Input.GetAxis("Horizontal");
-        transform.Translate(transform.right * dir * speed * Time.deltaTime);
-        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        float dir = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(dir * speed, rb.velocity.y);
 
         if (Input.GetButton("Horizontal"))
         {
-            ChangeAnimationState(WALK);
+            CurrentState = animationStates.Run;
         }
 
-        if (!IsAnimtionPlaying(animator, currentState))
+        if (!Input.GetButton("Horizontal"))
         {
-            ChangeAnimationState(IDLE);
+            CurrentState = animationStates.Idle;
         }
 
         if (dir < 0)
@@ -42,30 +62,6 @@ public class PlayerMovement : MonoBehaviour
         if (dir > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-    }
-
-    private void ChangeAnimationState(string newState)
-    {
-        if (newState == currentState)
-        {
-            return;
-        }
-
-        animator.Play(newState);
-
-        currentState = newState;
-    }
-
-    bool IsAnimtionPlaying(Animator animator, string stateName)
-    {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName) && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
         }
     }
 }
