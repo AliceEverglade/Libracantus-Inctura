@@ -10,6 +10,7 @@ public class MouseDrag : MonoBehaviour
         void Update()
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
             if (Input.GetMouseButtonDown(0))
             {
                 Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
@@ -19,7 +20,7 @@ public class MouseDrag : MonoBehaviour
                     offset = selectedObject.transform.position - mousePosition;
                 }
             }
-            if (selectedObject)
+            if (selectedObject && !selectedObject.tag.Equals("Envirement"))
             {
                 selectedObject.transform.position = mousePosition + offset;
             }

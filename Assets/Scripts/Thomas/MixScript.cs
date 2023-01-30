@@ -42,10 +42,6 @@ public class MixScript : MonoBehaviour
                 mix = 0;
                 extract.transform.position = dropLocation.transform.position;
                 break;
-
-            default:
-                mix = 0;
-                break;
         }
     }
 
