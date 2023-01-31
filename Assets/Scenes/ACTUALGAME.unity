@@ -22679,7 +22679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 625042818}
   buyItems:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 260760be0e8c3f14d98311a75a55fc0c, type: 2}
   - {fileID: 11400000, guid: bdd279ce32fab514aad1773b4c58b5dd, type: 2}
   - {fileID: 11400000, guid: 4d93e4d1e6f37624389c2e166a9d7116, type: 2}
   - {fileID: 11400000, guid: 3fa617da3ce9120449260c2dcafc50e1, type: 2}

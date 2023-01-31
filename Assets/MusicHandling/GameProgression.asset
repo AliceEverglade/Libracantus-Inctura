@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a14fc4a4d30e042acdce2401cbacb2, type: 3}
+  m_Name: GameProgression
+  m_EditorClassIdentifier: 
+  progressionItems:
+  - {fileID: 11400000, guid: c427851be60fa58429a4060359d5dcc4, type: 2}
+  - {fileID: 11400000, guid: 0863529211e7a954ba7f19ca25d57b61, type: 2}
+  - {fileID: 11400000, guid: df7ef89f9c8738346821bf1dd9840aa1, type: 2}
+  - {fileID: 11400000, guid: 4f4a2b357c61a544ebaa4ce576f56851, type: 2}
+  - {fileID: 11400000, guid: 99b65c0a1244ba54d92cc570030484b0, type: 2}
+  - {fileID: 11400000, guid: 0920959986107d74fb0a069b60cbb3d8, type: 2}
+  - {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  - {fileID: 11400000, guid: 27848bb1c89dcce4d950bc1329c37119, type: 2}
+  - {fileID: 11400000, guid: bd9c9db8f7f83b1458a565377f0aa325, type: 2}
+  - {fileID: 11400000, guid: cc5f67378a21a9447a8682440a323cb4, type: 2}
+  - {fileID: 11400000, guid: 2d6c3878074c512489c5dae6256aa630, type: 2}
+  - {fileID: 11400000, guid: a11794aef7ace00428eff4d1ac5d5416, type: 2}
+  leftProgressionItems: []
+  handler: {fileID: 0}
