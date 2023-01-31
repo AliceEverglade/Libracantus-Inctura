@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa8cb4c3af9324d4b96219d30ce43c5e, type: 3}
-  m_Name: YellowPotion
+  m_Name: DirtBrick
   m_EditorClassIdentifier: 
-  ID: 5
-  DisplayName: Yellow Potion
+  ID: 29
+  DisplayName: Dirt Brick
   Description: 
-  Icon: {fileID: 21300000, guid: 9d254a9418b7f6745876357b06d4f02c, type: 3}
-  MaxStackSize: 5
+  Icon: {fileID: 21300000, guid: 1a7b2ee6279452542a008212fc7643bf, type: 3}
+  MaxStackSize: 10
   Type: 0
   rarity: 1
   RarityColor: {r: 0, g: 0, b: 0, a: 0}

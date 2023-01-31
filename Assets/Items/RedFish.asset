@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa8cb4c3af9324d4b96219d30ce43c5e, type: 3}
-  m_Name: YellowPotion
+  m_Name: RedFish
   m_EditorClassIdentifier: 
-  ID: 5
-  DisplayName: Yellow Potion
+  ID: 12
+  DisplayName: Red Fish
   Description: 
-  Icon: {fileID: 21300000, guid: 9d254a9418b7f6745876357b06d4f02c, type: 3}
+  Icon: {fileID: 21300000, guid: 74c3fa102ace2c4429af2621d496e6be, type: 3}
   MaxStackSize: 5
   Type: 0
   rarity: 1
