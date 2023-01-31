@@ -6,6 +6,7 @@ public class MusicHandler : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private MusicSO musicSO;
+    [SerializeField] private ProgressionCheck progressionCheck;
     [SerializeField] private AudioSource audio;
     [SerializeField] private List<List<AudioSource>> songList = new List<List<AudioSource>>();
     [SerializeField] private GameObject audioContainer;
@@ -18,6 +19,9 @@ public class MusicHandler : MonoBehaviour
     
     void Start()
     {
+        musicSO.phase = 0;
+        musicSO.layer = 0;
+        progressionCheck.ResetProgression();
         songList[0][0].volume = 1;
     }
 

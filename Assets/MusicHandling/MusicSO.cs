@@ -14,7 +14,10 @@ public class MusicSO : ScriptableObject
 
     public void IncreasePhase()
     {
-        phase++;
+        if (phase < 13)
+        {
+            phase++;
+        }
     }
 
     public void IncreaseLayer()
