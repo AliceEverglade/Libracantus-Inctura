@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
+    [SerializeField] private InventoryHolder cauldronInventory;
     [SerializeField] private List<InventoryItemData> input = new List<InventoryItemData>();
     [SerializeField] private List<Recipe> recipeBook;
 
@@ -21,6 +22,7 @@ public class Cauldron : MonoBehaviour
 
     private void CheckRecipe() // do this on button press
     {
+        GetInventory();
         foreach(var recipe in recipeBook)
         {
             if(recipe.CheckRecipe(input, out float successrate))
@@ -28,17 +30,35 @@ public class Cauldron : MonoBehaviour
                 if(Random.Range(1,101) <= successrate)
                 {
                     //give x amount of item to player and remove items from cauldron inventory
-                    Debug.Log($"Crafted {recipe.amount} of {recipe.output.ToString()} with a {successrate}% chance of succeeding");
+                    ClearInventory();
+                    cauldronInventory.PrimaryInventorySystem.AddToInventory(recipe.output, recipe.amount);
                 }
                 else
                 {
-                    //fail craft
+                    ClearInventory();
                 }
             }
             else
             {
-                //fail craft
+                ClearInventory();
             }
+        }
+    }
+
+    private void GetInventory()
+    {
+        input = new List<InventoryItemData>();
+        foreach(var slot in cauldronInventory.PrimaryInventorySystem.InventorySlots)
+        {
+            var item = slot.ItemData;
+            input.Add(item);
+        }
+    }
+    private void ClearInventory()
+    {
+        foreach (var slot in cauldronInventory.PrimaryInventorySystem.InventorySlots)
+        {
+            slot.ClearSlot();
         }
     }
 }
