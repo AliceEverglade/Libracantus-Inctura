@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8cb4c3af9324d4b96219d30ce43c5e, type: 3}
   m_Name: Pumpkin
   m_EditorClassIdentifier: 
-  ID: 0
-  DisplayName: 
+  ID: 39
+  DisplayName: Pumpkin
   Description: 
-  Icon: {fileID: 0}
-  MaxStackSize: 0
+  Icon: {fileID: 21300000, guid: cbd2f9aad103da6418256432ad5bac1a, type: 3}
+  MaxStackSize: 5
   Type: 0
-  rarity: 0
+  rarity: 1
   RarityColor: {r: 0, g: 0, b: 0, a: 0}
   RarityMaterials: []
