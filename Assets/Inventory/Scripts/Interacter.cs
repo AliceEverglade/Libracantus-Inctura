@@ -62,13 +62,13 @@ public class Interacter : MonoBehaviour
         switch (hit.name)
         {
             case "Cauldron":
-                UIList[1].SetActive(true);
+                UIList[0].SetActive(true);
                 break;
             case "Crates":
                 UIList[5].SetActive(true);
                 break;
             case "Storage":
-                UIList[4].SetActive(true);
+                UIList[2].SetActive(true);
                 break;
 
         }
