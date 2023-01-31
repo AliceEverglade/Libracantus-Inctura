@@ -9,6 +9,8 @@ public class Interacter : MonoBehaviour
     public float InteractionPointRadius = 1f;
     public bool IsInteracting { get; private set; }
 
+    [SerializeField] private List<GameObject> UIList = new List<GameObject>();
+
     private void Update()
     {
         var colliders = Physics2D.OverlapCircleAll(InteractionPoint.position, InteractionPointRadius, InteractionLayer);
@@ -19,12 +21,21 @@ public class Interacter : MonoBehaviour
             for (int i = 0; i < colliders.Length; i++)
             {
                 Debug.Log(colliders[i].name);
+                CheckCol(colliders[i]);
                 var interactable = colliders[i].GetComponent<IInteractable>();
 
                 if(interactable != null)
                 {
                     StartInteraction(interactable);
                 }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            foreach (var UI in UIList)
+            {
+                UI.SetActive(false);
             }
         }
     }
@@ -44,5 +55,22 @@ public class Interacter : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(InteractionPoint.position, InteractionPointRadius);
+    }
+
+    private void CheckCol(Collider2D hit)
+    {
+        switch (hit.name)
+        {
+            case "Cauldron":
+                UIList[1].SetActive(true);
+                break;
+            case "Crates":
+                UIList[0].SetActive(true);
+                break;
+            case "Storage":
+                UIList[4].SetActive(true);
+                break;
+
+        }
     }
 }
