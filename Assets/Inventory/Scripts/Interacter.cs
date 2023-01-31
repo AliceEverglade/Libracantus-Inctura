@@ -68,7 +68,7 @@ public class Interacter : MonoBehaviour
                 UIList[5].SetActive(true);
                 break;
             case "Storage":
-                UIList[2].SetActive(true);
+                UIList[1].SetActive(true);
                 break;
 
         }
