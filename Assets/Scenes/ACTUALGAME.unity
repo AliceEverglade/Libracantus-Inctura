@@ -22277,7 +22277,46 @@ MonoBehaviour:
   display: {fileID: 1979865103}
   input: []
   recipeBook:
+  - {fileID: 11400000, guid: f05c5ec8f96c7c74dbc4db759c65705e, type: 2}
+  - {fileID: 11400000, guid: 8ba84f78e860ce84993c04f84b8b9312, type: 2}
+  - {fileID: 11400000, guid: 299f83bdaddec9c4ba2e13d28f87abaf, type: 2}
+  - {fileID: 11400000, guid: 352d9ded02a341b41bebb82c03936787, type: 2}
+  - {fileID: 11400000, guid: dc18e3633b9d19243960e8d6e312c2e8, type: 2}
+  - {fileID: 11400000, guid: bffccaccaee1dd943a3a776413e48131, type: 2}
+  - {fileID: 11400000, guid: 45eefbce3e823a04595f31207996b48e, type: 2}
+  - {fileID: 11400000, guid: 8fa2ccec0c34ebf4c8d094ce06f2ef9f, type: 2}
+  - {fileID: 11400000, guid: db2bce95330f69e45a39ce1f66f2ea4e, type: 2}
+  - {fileID: 11400000, guid: e450291e393975d429ce5ae5f06a5bc3, type: 2}
+  - {fileID: 11400000, guid: 2af871427b6d7184d8e718f6b30ba832, type: 2}
+  - {fileID: 11400000, guid: 0b7178c7cff563d4da8b93ac6f01fbdd, type: 2}
+  - {fileID: 11400000, guid: 74ae62d55b3a9b34b882c59f6ba59a6a, type: 2}
+  - {fileID: 11400000, guid: 58061944c9366cc4f8c7f18b1541641c, type: 2}
+  - {fileID: 11400000, guid: 55215f2fce8dd0b4683337a632e2adf1, type: 2}
+  - {fileID: 11400000, guid: 009e6f7aefa51a049a1bd08827927914, type: 2}
+  - {fileID: 11400000, guid: 31174be8e5db4a94e8ac702cdfbe0862, type: 2}
+  - {fileID: 11400000, guid: cc8e3aa938a72964fa1f104f5ca3a222, type: 2}
+  - {fileID: 11400000, guid: ebb7796fa0ba83047afdfaf492dfb08b, type: 2}
+  - {fileID: 11400000, guid: 0a71ab0a07aab134fbfad97043df4da6, type: 2}
+  - {fileID: 11400000, guid: 8a32af8357561fa4ba9cf08a95607fbe, type: 2}
+  - {fileID: 11400000, guid: 0bb9a7533f1267c4f8cda14370626883, type: 2}
+  - {fileID: 11400000, guid: c3d814c48baff2f4e8d58ac955ba90df, type: 2}
+  - {fileID: 11400000, guid: 40dfb2c4f8aa9f648967c26730969c35, type: 2}
+  - {fileID: 11400000, guid: 0d243bd24c0e6bc4fac121ad13ba4835, type: 2}
+  - {fileID: 11400000, guid: dbb685d4016035846a25b2963c353b96, type: 2}
+  - {fileID: 11400000, guid: e6031d2f5e940664e839aea181700692, type: 2}
+  - {fileID: 11400000, guid: c55e3212164d0be459006c9bf84934ff, type: 2}
+  - {fileID: 11400000, guid: 6bc1bee54e0e9c14b8ada2180f57c183, type: 2}
+  - {fileID: 11400000, guid: fe8a14452ff151a498571bbb0778dbf1, type: 2}
+  - {fileID: 11400000, guid: bf77a1952e6e1a941946a7364b2dd384, type: 2}
+  - {fileID: 11400000, guid: dcf81bf96e4633d48a99d05ccf24feca, type: 2}
+  - {fileID: 11400000, guid: 56acf1e22b6c3c84fb41f88eae8ac161, type: 2}
+  - {fileID: 11400000, guid: 02a3f6605fb27d04393ad4c4f094aa00, type: 2}
+  - {fileID: 11400000, guid: 655fca61548aa9f4ca8ba49962553773, type: 2}
   - {fileID: 11400000, guid: 15e22a868db3e5a4394e2422c6b42dc4, type: 2}
+  - {fileID: 11400000, guid: b24568b4eaca74e448d81f14a077e8ef, type: 2}
+  - {fileID: 11400000, guid: 404fc5fbba66d204a894537e8d86a37c, type: 2}
+  - {fileID: 11400000, guid: 4f17cee7a32ce5d45a2f32a8dccca2ed, type: 2}
+  - {fileID: 11400000, guid: a16e4cac7c2040449aa22695170cfbcb, type: 2}
 --- !u!212 &702766104
 SpriteRenderer:
   m_ObjectHideFlags: 0

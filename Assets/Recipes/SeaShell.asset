@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 667f1356af6157349a706c0782492703, type: 3}
-  m_Name: YellowPotionRecipe
+  m_Name: SeaShell
   m_EditorClassIdentifier: 
-  name: Yellow Potion recipe
+  name: Sea Shell recipe
   ingredients:
-  - {fileID: 11400000, guid: 3fa617da3ce9120449260c2dcafc50e1, type: 2}
-  - {fileID: 11400000, guid: 82931e91c410e5f43acff6eb96edc775, type: 2}
-  - {fileID: 11400000, guid: bdd279ce32fab514aad1773b4c58b5dd, type: 2}
-  - {fileID: 11400000, guid: 4d93e4d1e6f37624389c2e166a9d7116, type: 2}
+  - {fileID: 11400000, guid: 2d6c3878074c512489c5dae6256aa630, type: 2}
+  - {fileID: 11400000, guid: d3480159da5015641bb319e202bc7a3f, type: 2}
+  - {fileID: 11400000, guid: 0920959986107d74fb0a069b60cbb3d8, type: 2}
+  - {fileID: 11400000, guid: df7ef89f9c8738346821bf1dd9840aa1, type: 2}
   ingredientCount: 4
-  output: {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  output: {fileID: 11400000, guid: 33fa213e2ce72534ab8cf513e9ee34b7, type: 2}
   baseSuccessChance: 100
   amount: 1

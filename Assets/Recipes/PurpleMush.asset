@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 667f1356af6157349a706c0782492703, type: 3}
-  m_Name: RedPotion
+  m_Name: PurpleMush
   m_EditorClassIdentifier: 
-  name: Red Potion
+  name: Purple Mush recipe
   ingredients:
-  - {fileID: 11400000, guid: 3fa617da3ce9120449260c2dcafc50e1, type: 2}
-  - {fileID: 11400000, guid: cc5f67378a21a9447a8682440a323cb4, type: 2}
   - {fileID: 11400000, guid: 450580528bbf5b54fa31190560c6d54c, type: 2}
+  - {fileID: 11400000, guid: 5d58572270e0d7c46b2ea431fb0aef5d, type: 2}
+  - {fileID: 11400000, guid: 0e383241abc6193478dd5f737e329a5c, type: 2}
   ingredientCount: 3
-  output: {fileID: 11400000, guid: 0920959986107d74fb0a069b60cbb3d8, type: 2}
+  output: {fileID: 11400000, guid: 96d213b1f817c714ea2ae6bf6ea0aeb8, type: 2}
   baseSuccessChance: 100
   amount: 1

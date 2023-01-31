@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667f1356af6157349a706c0782492703, type: 3}
+  m_Name: BottledLightning
+  m_EditorClassIdentifier: 
+  name: Bottled Lightning
+  ingredients:
+  - {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  - {fileID: 11400000, guid: 99b65c0a1244ba54d92cc570030484b0, type: 2}
+  - {fileID: 11400000, guid: 3c7a964357aae8b44a5342537dc0a608, type: 2}
+  - {fileID: 11400000, guid: 260760be0e8c3f14d98311a75a55fc0c, type: 2}
+  - {fileID: 11400000, guid: d3480159da5015641bb319e202bc7a3f, type: 2}
+  ingredientCount: 5
+  output: {fileID: 11400000, guid: 27848bb1c89dcce4d950bc1329c37119, type: 2}
+  baseSuccessChance: 100
+  amount: 1

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667f1356af6157349a706c0782492703, type: 3}
+  m_Name: WaterOrb
+  m_EditorClassIdentifier: 
+  name: Water Orb recipe
+  ingredients:
+  - {fileID: 11400000, guid: 260760be0e8c3f14d98311a75a55fc0c, type: 2}
+  - {fileID: 11400000, guid: 33fa213e2ce72534ab8cf513e9ee34b7, type: 2}
+  - {fileID: 11400000, guid: 99b65c0a1244ba54d92cc570030484b0, type: 2}
+  - {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  - {fileID: 11400000, guid: 2d6c3878074c512489c5dae6256aa630, type: 2}
+  ingredientCount: 5
+  output: {fileID: 11400000, guid: a11794aef7ace00428eff4d1ac5d5416, type: 2}
+  baseSuccessChance: 100
+  amount: 1

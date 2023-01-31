@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 667f1356af6157349a706c0782492703, type: 3}
-  m_Name: YellowPotionRecipe
+  m_Name: WaterBottle
   m_EditorClassIdentifier: 
-  name: Yellow Potion recipe
+  name: Water Bottle Recipe
   ingredients:
-  - {fileID: 11400000, guid: 3fa617da3ce9120449260c2dcafc50e1, type: 2}
-  - {fileID: 11400000, guid: 82931e91c410e5f43acff6eb96edc775, type: 2}
+  - {fileID: 11400000, guid: 260760be0e8c3f14d98311a75a55fc0c, type: 2}
   - {fileID: 11400000, guid: bdd279ce32fab514aad1773b4c58b5dd, type: 2}
-  - {fileID: 11400000, guid: 4d93e4d1e6f37624389c2e166a9d7116, type: 2}
-  ingredientCount: 4
-  output: {fileID: 11400000, guid: 514886de2466b4b4585b4eb04773c48e, type: 2}
+  ingredientCount: 2
+  output: {fileID: 11400000, guid: 25e8d20ab47362a4e975d1162b879045, type: 2}
   baseSuccessChance: 100
   amount: 1
