@@ -8,6 +8,8 @@ public class Cauldron : MonoBehaviour
     [SerializeField] private InventoryDisplay display;
     [SerializeField] private List<InventoryItemData> input = new List<InventoryItemData>();
     [SerializeField] private List<Recipe> recipeBook;
+    [SerializeField] private ProgressionCheck progression;
+    [SerializeField] private Achievements winLose;
 
     // Start is called before the first frame update
     void Start()
@@ -30,21 +32,21 @@ public class Cauldron : MonoBehaviour
             if(recipe.CheckRecipe(input, out float successrate))
             {
                 Debug.Log("Recipe Found");
-                if (Random.Range(1,101) <= successrate)
+                int chance = Random.Range(1, 101);
+                if ( chance <= successrate)
                 {
-                    Debug.Log("Item Created");
+                    Debug.Log($"Item Created, ({chance} <= {successrate})");
                     //give x amount of item to player and remove items from cauldron inventory
                     ClearInventory();
                     cauldronInventory.PrimaryInventorySystem.AddToInventory(recipe.output, recipe.amount);
+                    progression.CheckProgression(recipe.output);
+                    winLose.CheckWin(recipe.output);
+                    winLose.CheckDanger(recipe.output);
                 }
                 else
                 {
                     ClearInventory();
                 }
-            }
-            else
-            {
-                ClearInventory();
             }
         }
     }

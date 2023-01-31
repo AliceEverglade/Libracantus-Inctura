@@ -1019,13 +1019,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1979865103}
     - target: {fileID: 7073164747497219031, guid: 5715f0729b57bf34dbe34d6b23827639, type: 3}
+      propertyPath: winLose
+      value: 
+      objectReference: {fileID: 11400000, guid: 06e81c2ef1f070044b0a3b82cddc7800, type: 2}
+    - target: {fileID: 7073164747497219031, guid: 5715f0729b57bf34dbe34d6b23827639, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: fa9a763acd8c65a4d93f21d3d1d597a0, type: 2}
+    - target: {fileID: 7073164747497219031, guid: 5715f0729b57bf34dbe34d6b23827639, type: 3}
       propertyPath: recipeBook.Array.size
-      value: 1
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7073164747497219031, guid: 5715f0729b57bf34dbe34d6b23827639, type: 3}
       propertyPath: recipeBook.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 15e22a868db3e5a4394e2422c6b42dc4, type: 2}
+      objectReference: {fileID: 11400000, guid: f05c5ec8f96c7c74dbc4db759c65705e, type: 2}
     - target: {fileID: 7073164747497219033, guid: 5715f0729b57bf34dbe34d6b23827639, type: 3}
       propertyPath: m_RootOrder
       value: 4

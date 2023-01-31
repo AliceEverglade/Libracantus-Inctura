@@ -18,13 +18,17 @@ public class Recipe : ScriptableObject
     {
         ingredientCount = ingredients.Count;
         int ingredientsCheck = 0;
-        successChance = baseSuccessChance - (10 * (input.Count - ingredientCount));
+        successChance = baseSuccessChance;
         
         foreach (var ingredient in ingredients)
         {
             if (input.Contains(ingredient)) 
             { 
                 ingredientsCheck++; 
+            }
+            else if(ingredient != null)
+            {
+                successChance -= 10f;
             }
         }
         bool success = ingredientsCheck == ingredientCount;
