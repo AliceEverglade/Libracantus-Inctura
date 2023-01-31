@@ -10,6 +10,8 @@ public class MusicSO : ScriptableObject
 
     public int BPM = 140;
 
+    public int[] phaseLayerCount = new int[4] { 6, 9, 12, 13 };
+
     public void IncreasePhase()
     {
         phase++;
@@ -18,5 +20,9 @@ public class MusicSO : ScriptableObject
     public void IncreaseLayer()
     {
         layer++;
+        if (layer >= phaseLayerCount[phase] && phaseLayerCount[phase] != 13)
+        {
+            IncreasePhase();
+        }
     }
 }

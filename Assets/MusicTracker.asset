@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bdf0f238a9b594491045d73556921b, type: 3}
   m_Name: MusicTracker
   m_EditorClassIdentifier: 
-  phase: 0
-  layer: 5
+  phase: 3
+  layer: 13
+  BPM: 140
+  phaseLayerCount: 06000000090000000c0000000d000000
