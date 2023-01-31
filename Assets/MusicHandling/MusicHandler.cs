@@ -60,7 +60,7 @@ public class MusicHandler : MonoBehaviour
         newAudio.transform.parent = audioContainer.transform;
     }
 
-    private void LayerUpdate(int targetVolume)
+    public void LayerUpdate(int targetVolume)
     {
         int oldPhase = musicSO.phase;
 
